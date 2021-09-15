@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #eee;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+body{
+    background-image: url(https://pplware.sapo.pt/wp-content/uploads/2021/01/SpaceX-Tesmanian_1600x.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+
+}

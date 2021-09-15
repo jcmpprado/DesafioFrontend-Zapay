@@ -1,0 +1,33 @@
+.NavBarContainer {
+    background-color: #fff;
+    padding: 3px;
+    margin: none;
+    border: none;
+    font-size: 18px;
+    box-shadow: 1px 1px 10px 1px #000;
+}
+
+
+.listaLancamento {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.listaLancamento ul{
+    display: flex;
+}
+
+.listaLancamento ul li {
+    padding: 30px;
+}
+
+.listaLancamento ul li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0351b6;
+    transition: 300ms;
+}
+
+.listaLancamento ul li a:hover{
+    color: #000;
+    text-decoration: underline;
+}
