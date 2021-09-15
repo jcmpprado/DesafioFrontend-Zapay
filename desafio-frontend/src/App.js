@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import api from "./Api";
 import NavBar from "./components/NavBar";
 import './App.css'
+import Routes from "./components/Routes/routes";
 
 
 
 function App () {
 
-  
   const [proLancamento, setProLancamento] = useState([])
   useEffect( () => {
     api
@@ -18,6 +18,7 @@ function App () {
   return (
     <>
       <NavBar />
+      <Routes />
         <div className="Container">
         <h3>Próximo Lançamento</h3>
         {proLancamento.map(proLancamento=>{
@@ -47,7 +48,6 @@ function App () {
   // return (
   //   <>
   //     <NavBar />
-  //     <h1>Lançamentos </h1>
   //     <div className="Container">
   //       <p>
   //         <h3>Último Lançamento</h3>
