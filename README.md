@@ -19,7 +19,7 @@ O desafio consiste em elaborar um front-end em React que consuma a API da SpaceX
 
 ------
 
-![printHome](C:\Users\vitor\Desktop\Zapay\printHome.JPG)
+![printHome](https://user-images.githubusercontent.com/87131837/133535852-419d4677-ef7e-4fe5-a4eb-922c7efec38f.JPG)
 
 
 
