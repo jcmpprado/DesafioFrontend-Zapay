@@ -1,17 +1,17 @@
 import React from 'react';
-import {Route, BrowserRouter } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
-import ultimolancamento from '../Pages/ultimolancamento';
-import proximoslancamentos from '../Pages/proximoslancamentos';
-import lancamentospassados from '../Pages/lancamentospassados';
+import Ultimolancamento from '../Pages/Ultimolancamento';
+import Proximoslancamentos from '../Pages/Proximoslancamentos';
+import Lancamentospassados from '../Pages/Lancamentospassados';
 
 function Routes () {
     return (
-        <BrowserRouter>
-            <Route component = {ultimolancamento} path="./components/Pages/ultimolancamento.js" ultimoLancamento />
-            <Route component = {proximoslancamentos} path="./components/Pages/proximoslancamentos" proximoslancamentos />
-            <Route component = {lancamentospassados} path="./components/Pages/lancamentospassados" lancamentospassados />
-        </BrowserRouter>
+            <Switch>
+                <Route path="/" exact={true} component={Ultimolancamento} />
+                <Route path="/proximoslancamentos" component={Proximoslancamentos} />
+                <Route path="/lancamentospassados" component={Lancamentospassados}  />
+            </Switch>
     );
 }
 

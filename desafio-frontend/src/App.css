@@ -4,6 +4,7 @@ h1 {
 
 .Container {
     background-color: rgb(7, 7, 7, .45);
+    
     max-width: 70%;
     margin: 30px auto;
     overflow: auto;
@@ -21,3 +22,4 @@ h3 {
 h4 {
     padding: 5px;
 }
+

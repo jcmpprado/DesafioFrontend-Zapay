@@ -18,7 +18,6 @@ function UltimoLancamento () {
 
   return (
     <>
-      <NavBar />
       <div className="Container">
         <p>
           <h3>Último Lançamento</h3>

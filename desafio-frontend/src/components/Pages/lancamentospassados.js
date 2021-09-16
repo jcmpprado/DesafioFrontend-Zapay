@@ -11,19 +11,25 @@ function LancamentoPassados () {
   const [lancamentosPassados, setLancamentosPassados] = useState([])
   useEffect( () => {
     api
-      .get('/v3/launches/past?limit=10') 
+      .get('/v3/launches/past') 
       .then((response) => setLancamentosPassados(response.data))
   }, [])
     console.log(lancamentosPassados)
 
   return (
     <>
-      <NavBar />
       <div className="Container">
         <p>
           <h3>Lançamento Passados</h3>
-          <h4><strong>Nome: </strong> {lancamentosPassados.mission_name} </h4>
-          <h4><strong>Data/horário: </strong> {lancamentosPassados.launch_date_local} </h4>
+          {lancamentosPassados.slice(0, 10).map((item) => {
+            return (
+              <p key={item.launch_date_unix}>
+                <h4><strong>Nome: </strong> {item.mission_name} </h4>
+                <h4><strong>Data/horário: </strong> {item.launch_date_local} </h4>
+              </p>
+            )
+          })}
+
         </p>
       </div>
 
